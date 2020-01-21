@@ -117,7 +117,7 @@ class _TodoScreenState extends State<TodoScreen> {
                 todoObj.title = todoTitle.text;
                 todoObj.description = todoDescription.text;
                 todoObj.todoDate = todoDate.text;
-                todoObj.category = _selectedValue;
+                todoObj.category = _selectedValue.text;
                 todoObj.isFinished = 0;
                 var result = await _todoService.saveTodo(todoObj);
                 print(result);
